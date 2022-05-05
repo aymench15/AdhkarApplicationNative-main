@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/homeicon"
+        android:title="الرئيسيه" />
+    <item
+        android:id="@+id/CD"
+        android:icon="@drawable/adkaricon"
+        android:title="أدعيه" />
+    <item
+        android:id="@+id/kibla"
+        android:icon="@drawable/kiblaicon"
+        android:title="القبلة" />
+
+</menu>
