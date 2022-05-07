@@ -43,7 +43,7 @@ public class Database extends SQLiteOpenHelper {
 
     }
     public Cursor getdata(){
-        String query = " SELECT *FROM " + table_name ;
+        String query = " SELECT * FROM " + table_name ;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor=null;
         if(db!=null)

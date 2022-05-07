@@ -46,12 +46,13 @@
                         android:layout_width="155dp"
                         android:layout_height="65dp"
 
-                        android:textSize="25dp"
-
-                        android:textStyle="bold"
                         android:onClick="onClick"
+
                         android:text="اذكار المساء"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:cornerRadius="10dp" />
 
 
                     <Button
@@ -66,7 +67,8 @@
 
                         android:textAlignment="center"
                         android:textSize="25dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        app:cornerRadius="10dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -81,28 +83,30 @@
 
                         android:layout_width="155dp"
                         android:layout_height="65dp"
-                        android:textSize="25dp"
                         android:layout_marginLeft="29dp"
-
-                        android:textStyle="bold"
-
                         android:onClick="onClick"
+
                         android:text="اذكار الصلاة"
-                        android:textAlignment="center" />
+
+                        android:textAlignment="center"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:cornerRadius="10dp" />
 
 
                     <Button
                         android:id="@+id/adhkarnawm"
                         android:layout_width="155dp"
                         android:layout_height="65dp"
-                        android:textStyle="bold"
                         android:layout_marginLeft="43dp"
-                        android:textSize="25dp"
                         android:backgroundTint="#F2C37B"
-
                         android:onClick="onClick"
                         android:text="اذكار النوم"
-                        android:textAlignment="center" />
+
+                        android:textAlignment="center"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:cornerRadius="10dp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -111,12 +115,11 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
 
-            android:focusable="auto"
-            android:focusableInTouchMode="true"
-
             android:background="@color/yellow2"
-            app:cardCornerRadius="20dp"
-           >
+            android:focusable="auto"
+
+            android:focusableInTouchMode="true"
+            app:cardCornerRadius="20dp">
 
             <TextView
                 android:id="@+id/textView2"
@@ -225,47 +228,34 @@
         android:layout_height="wrap_content"
         android:background="#F2C37B">
 
-        <com.google.android.material.appbar.CollapsingToolbarLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-
-            app:toolbarId="@+id/toolbar">
-
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"></androidx.appcompat.widget.Toolbar>
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/imageButton"
-                android:layout_width="70dp"
-                android:layout_height="45dp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="top|left"
-                android:layout_marginStart="13dp"
 
-                android:layout_marginTop="13dp"
-                android:layout_marginEnd="13dp"
-                android:layout_marginBottom="13dp"
-                android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:onClick="gone"
-                app:srcCompat="@android:drawable/ic_menu_manage"
+                app:srcCompat="@drawable/ic_baseline_settings"
                 tools:ignore="OnClick" />
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:backgroundTint="#F2C37B"
-                android:text="الرئيسيه"
+                android:text="الرئيسية"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="40dp"
                 android:textStyle="bold" />
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </LinearLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
 

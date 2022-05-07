@@ -62,23 +62,16 @@ public class AdhkarListAdapter extends RecyclerView.Adapter<AdhkarListAdapter.Dh
             repetition = itemView.findViewById(R.id.repetetion_number);
             fav_btn = itemView.findViewById(R.id.fav_btn);
 
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick (View view){
-                    if(listener != null){
-                        int position = getAdapterPosition();
-                        if(position != RecyclerView.NO_POSITION)
-                        {
-                            listener.onItemClick(position);
-                        }}}});
-            fav_btn.setOnClickListener(view ->{
-                        setFavorite();
-            });
+            itemView.setOnClickListener(view -> {
+                if(listener != null){
+                    int position = getAdapterPosition();
+                    if(position != RecyclerView.NO_POSITION)
+                    {
+                        listener.onItemClick(position);
+                    }}});
+
         }
 
-        private void setFavorite (){
-            fav_btn.setImageResource(R.drawable.ic_baseline_favorite);
-        }
     }
 
 
